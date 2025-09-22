@@ -11,3 +11,8 @@ int main() {
 
     return 0;
 }
+
+//another way
+
+/* string firstName = "John "; string lastName = "Doe"; string fullName = firstName + lastName; cout << fullName;
+*/
