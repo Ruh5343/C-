@@ -1,0 +1,22 @@
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main() {
+    int n, x;
+    cin >> n;   // number of values to insert
+
+    set<int> numbers;
+
+    for(int i = 0; i < n; i++){
+        cin >> x;
+        numbers.insert(x);
+    }
+
+    // Print set elements
+    for (int num : numbers) {
+        cout << num << "\n";
+    }
+
+    return 0;
+}
