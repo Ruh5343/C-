@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool isPrime(int n){
+    if(n<=1) return false;
+
+    for(int i=2;i*i<=n;i++){
+        if(n%i==0) return false;
+    }
+    return true;
+}
+int main(){
+    string s;
+    cin>>s;
+    int k,c=0;
+    cin>>k;
+        for(int i=0;i<s.size();i++){
+        int d=s[i]-'0';
+
+        d=(d+k)%10;
+
+        s[i]=d+'0';
+    }
+    for(int i=0;i<s.size();i++) {
+            int d= s[i]-'0';
+        if (isPrime(d)){
+            c++;
+        }
+    }
+    for(int i=0;i<s.size();i++){
+        cout<<s[i];
+    }
+    cout<<endl;
+    if(c>0){
+        cout<<"Yes"<<endl;
+    }else{
+    cout<<"No"<<endl;
+    }
+return 0;
+}
