@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+string v,r,t;
+cin>>v>>t;
+r=v;
+reverse(r.begin(),r.end());
+if(r==t){
+    cout<<"YES\n";
+}else{
+cout<<"NO\n";
+}
+
+    return 0;
+}
