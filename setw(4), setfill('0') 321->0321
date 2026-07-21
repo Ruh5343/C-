@@ -1,0 +1,14 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N; //input: 1
+
+    cout << setw(4) << setfill('0') << N << endl; //output: 0001
+
+    return 0;
+}
+//setw(4) → Output width will be 4 characters.
+//setfill('0') → If the number has fewer than 4 digits, fill the empty spaces with '0'
