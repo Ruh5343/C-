@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int check_kth_bit(int x,int k){
+return (x>>k)&1;
+}
+
+void print_on_bit(int x){
+for(int k=0; k<32; k++){
+    if(check_kth_bit(x,k)){
+        cout<<k<<' ';
+    }
+}
+cout<<'\n';
+}
+int main(){
+cout<<check_kth_bit(11,3)<<endl;
+ print_on_bit(11); //binary 1011(position 3210) -> 0 1 3
+}
