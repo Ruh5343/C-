@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int digit_sum(string n)
+{
+    if(n.size() <2)
+    {
+        return 0;
+    }
+    int sum=0;
+ for (char c: n){
+    sum= sum+(c-'0');
+ }
+    return 1+digit_sum(to_string(sum));  ////to_string(sum) converts: 19  →  "19". So it converts an integer into a string.
+
+}
+int main()
+{
+   string n;
+    cin>>n;
+
+    int k= digit_sum(n);
+
+    cout<<k<<endl;
+}
