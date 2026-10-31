@@ -1,0 +1,3 @@
+int toggle_kth_bit(int x, int k) {
+    return x ^ (1 << k);
+}
