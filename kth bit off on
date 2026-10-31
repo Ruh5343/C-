@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int On_kth_bit (int x,int k){
+return x|(1<<k);
+}
+int off_kth_bit (int x,int k){
+return x&(~(1<<k));
+}
+
+int main(){
+cout<<On_kth_bit (11,2)<<endl;
+cout<<off_kth_bit(15,2)<<endl;
+return 0;
+}
