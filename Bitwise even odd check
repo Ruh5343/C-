@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool is_even(int x){ // even hole last bit 0. odd e last bit 1
+if((x&1)!=0){ // or we can write if (x&1) & is a set operation nad ekhane boltese x er last bit 1.
+    return false;
+}else{
+return true;
+}
+}
+int main(){
+cout<<is_even(43)<<endl; // auto binary convert hoye jabe
+return 0;
+}
